@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaikh Sahazada</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shaikh Sahazada</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="blue">Sahazada</span>
+                <div>and i am a</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span><br><br>
+                <a href="Sahazada.pdf" class="down-cv" style="text-decoration: none;">Download Cv</a>
+                
+            </div>
+            <div class="rightSection">
+                <img src="Img/p1.png">
+            </div>
+        </section>
+
+        <!---------------About Section------------------------>
+
+        <section id="secondSection">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="Img/WhatsApp Image 2024-04-13 at 21.56.51_8f60d212.jpg" id="img1">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="Ab-me">About Me</h1>
+                            <p> I am currently a B-Tech student. My family is one of the most important thing in my life
+                                and they have always been there for me. I am a very active student who loves playing
+                                sports.I believe thatI am a very thoughtful person. I love making people smile, and I am
+                                always thinking about how I can do things to make a difference in peoples lives. I am
+                                also a very cheerful person. You will rarely see me not smiling and I love making people
+                                laugh.</p><br>
+                            <p>My favorite hobby is travelling specially solo travelling.Solo travel is traveling by
+                                yourself on your own schedule and timing. During solo travel, you gain a new confidence,
+                                learn more about yourself, connect within and find your purpose, but most excitedly,
+                                make new friends in new places.While embarking on new journeys, solo doesn't necessarily
+                                mean alone. You can meet with a bnch of local people, join a tour group, or seek out
+                                other solo tourists.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI</span><br>Designing Web interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2017</span><br>ITI from BIET Bhadrak</li>
+                                    <li><span>2020</span><br>Diploma from BEST Bhadrak</li>
+                                    <li><span>2024</span><br>B-TECH from NIT Bhubaneswar</li>
+                                    <li><span>2024</span><br>Full Stack Python from Naresh it (Hyderabad)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-----------My Project Section------------->
+            <div id="project">
+                <div class="container">
+                    <h1 id="my-proj" class="Ab-me">My Project's</h1>
+                    <div class="project-list">
+                        <div id="proj">
+                            <h2>Stone Paper Sezer</h2>
+                            <a href="https://github.com/Sahazada11/First-Python-Project.git"><img src="Img/images1.png" height="250"
+                                    style="border-radius: 10px;">
+                            </a> <!--inline css for img tag -->
+                        </div>
+                        <div id="proj">
+                            <h2>Project02</h2>
+                        </div>
+                        <div id="proj">
+                            <h2>Project03</h2>
+                        </div>
+                        <div id="proj">
+                            <h2>Project04</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <!--typed java script-->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- animation! for skill and education-->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', '&amp;', 'Full Stack Python Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
